@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections//**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -12,7 +13,12 @@ const config: Config = {
         oswald: ["var(--font-oswald)"],
         pixel: ["var(--font-pixel)"],
       },
-      screens: { xs: "520px", "2xl": "1400px" },
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1548px",
+      },
       colors: {
         primary: {
           background: "rgba(255, 255, 255, .05)",

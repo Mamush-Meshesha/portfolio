@@ -9,39 +9,24 @@ import TextArea from "@/components/ui/text-area";
 import Profile from "@/components/ui/profile";
 import FancyButton from "@/components/ui/fancy-button";
 import LiveClock from "@/components/ui/live-clock";
+import MagneticWreapper from "@/components/visualEffect/magnetic-wrapper";
+import ScrollDown from "@/components/ui/7.1 scroll-down";
+import LandingSection from "@/sections/landing";
+import FeaturedSection from "@/sections/featured"
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen">
       <WaterWaveWrapper
         imageUrl=""
         dropRadius="3"
-        perturbance="3"
+        perturbance="2"
         resolution="2048"
       >
         {() => (
-          <div className="w-full pt-20">
-            <div className="max-w-2xl mx-auto">
-              <Card title="ui components">
-                <div className="grid grid-cols-4">
-                  <Button>Basic button</Button>
-                  <Button>
-                    <GoHomeFill />
-                    Basic button
-                  </Button>
-                  <Button isIcon>
-                    <FaUser />
-                  </Button>
-                  <Button link="https://www.google.com">google</Button>
-                </div>
-                <Input type="text" placeholder="Full Name" />
-                <Input type="text" placeholder="mamush" icon={<FaUser />} />
-                <TextArea placeholder="descroption" icon={<FaUser />} />
-                <Profile />
-                <FancyButton text="contact us" icon={<FaArrowRight />} />
-                <LiveClock timeZone="Africa/Casablanca "/>
-              </Card>
-            </div>
+          <div>
+            {/* <LandingSection /> */}
+            <FeaturedSection />
           </div>
         )}
       </WaterWaveWrapper>
