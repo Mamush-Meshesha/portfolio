@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "../../lib/utils";
 import React from "react";
 import { FC, useState } from "react";
@@ -25,7 +26,10 @@ export const HeadingAnimatedSvg: FC<HeadingAnimatedSvg> = ({
         viewBox="0 0 384 384" // Adjust this viewBox based on your SVG content
         width={active ? 30 : 50}
         height={active ? 30 : 50}
-        className={cn(" origin-center transition-all duration-700 ease-in" , active && "animate-spin")}
+        className={cn(
+          " origin-center transition-all duration-700 ease-in",
+          active && "animate-spin"
+        )}
       >
         <path
           id="dp_path001"

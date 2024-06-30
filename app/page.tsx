@@ -1,18 +1,8 @@
 "use client";
-import Button from "@/components/ui/button";
-import Card from "@/components/ui/card";
 import WaterWaveWrapper from "@/components/visualEffect/water-wave";
-import { GoHomeFill } from "react-icons/go";
-import { FaArrowRight, FaUser } from "react-icons/fa";
-import Input from "@/components/ui/input";
-import TextArea from "@/components/ui/text-area";
-import Profile from "@/components/ui/profile";
-import FancyButton from "@/components/ui/fancy-button";
-import LiveClock from "@/components/ui/live-clock";
-import MagneticWreapper from "@/components/visualEffect/magnetic-wrapper";
-import ScrollDown from "@/components/ui/7.1 scroll-down";
-import LandingSection from "@/sections/landing";
-import FeaturedSection from "@/sections/featured"
+import AboutSection from "@/sections/about";
+
+import FeaturedSection from "@/sections/featured";
 
 export default function Home() {
   return (
@@ -26,7 +16,13 @@ export default function Home() {
         {() => (
           <div>
             {/* <LandingSection /> */}
-            <FeaturedSection />
+            <AboutSection />
+            <div className="space-y-4 py-8">
+              <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
+                {/* Me card */}
+                
+                  </div>
+            </div>
           </div>
         )}
       </WaterWaveWrapper>
