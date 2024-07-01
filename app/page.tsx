@@ -17,12 +17,7 @@ export default function Home() {
           <div>
             {/* <LandingSection /> */}
             <AboutSection />
-            <div className="space-y-4 py-8">
-              <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
-                {/* Me card */}
-                
-                  </div>
-            </div>
+
           </div>
         )}
       </WaterWaveWrapper>
