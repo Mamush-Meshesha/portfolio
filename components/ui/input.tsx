@@ -3,11 +3,11 @@ import { FC, ReactNode } from "react";
 interface InputProps {
   icon?: ReactNode;
   placeholder?: string;
-  className?: string;
+  name?: string;
   type?: string;
 }
 
-const Input: FC<InputProps> = ({ icon, placeholder, className, type }) => {
+const Input: FC<InputProps> = ({ icon, placeholder, name, type }) => {
   return (
     <div className="relative w-full py-3" >
       {/* Icons */}
@@ -17,10 +17,12 @@ const Input: FC<InputProps> = ({ icon, placeholder, className, type }) => {
       </div>
       <input
         type={type}
+        name={name}
         placeholder={placeholder}
-        className="bg-primary-background text-primary-foreground rounded-lg text-sm ps-10 px-2 py-4 focus:outline-none"
+        className="bg-primary-background w-full text-primary-foreground rounded-lg text-sm ps-10 px-2 py-4 focus:outline-none"
       />
     </div>
+    
   );
 };
 

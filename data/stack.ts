@@ -1,35 +1,19 @@
-import HtmlImg from "@/public/assets/stack/html.png";
-import CSSImg from "@/public/assets/stack/css.jpg";
-import JavascriptImg from "@/public/assets/stack/js.jpg";
-import TypescriptImg from "@/public/assets/stack/ts.png"
 import ReactImg from "@/public/assets/stack/react.png"
 import VueImg from "@/public/assets/stack/vue.png"
+import NuxtImg from "@/public/assets/stack/nuxt.png"
+import NextImg from "@/public/assets/stack/next.png";
+import TailwindImg from "@/public/assets/stack/tailwind.png"
+import BootstrapImg from "@/public/assets/stack/boot.png"
+import ExpressImg from "@/public/assets/stack/node.png"
+import GolangImg from "@/public/assets/stack/go.png"
+import HasuraImg from "@/public/assets/stack/hasura.png"
+import GraphQLImg from "@/public/assets/stack/graphql.png"
+import MongoImg from "@/public/assets/stack/mongo.png"
+import PostImg from "@/public/assets/stack/post.jpg"
+import DockerImg from "@/public/assets/stack/docker.png"
 
 export const stackData = [
-  {
-    id: 0,
-    title: "Html 5",
-    image: HtmlImg,
-    bgColor: "",
-  },
-  {
-    id: 1,
-    title: "CSS 3",
-    image: CSSImg,
-    bgColor: "",
-  },
-  {
-    id: 2,
-    title: "Javascript",
-    image: JavascriptImg,
-    bgColor: "",
-  },
-  {
-    id: 3,
-    title: "Typescript",
-    image: TypescriptImg,
-    bgColor: "",
-  },
+  
   {
     title: "Frontend Frameworks",
     stack: [
@@ -48,13 +32,13 @@ export const stackData = [
       {
         id: 2,
         title: "Nuxt js",
-        image: "NuxtImg",
+        image: NuxtImg,
         bgColor: "",
       },
       {
         id: 3,
         title: "Next js",
-        image: "NextImg",
+        image: NextImg,
         bgColor: "",
       },
     ],
@@ -65,54 +49,43 @@ export const stackData = [
       {
         id: 0,
         title: "Tailwindcss",
-        image: "TailwindImg",
+        image: TailwindImg,
         bgColor: "",
       },
       {
         id: 1,
         title: "bootstrap",
-        image: "BootstrapImg",
+        image: BootstrapImg,
         bgColor: "",
       },
     ],
   },
 
   {
-    title: "animation",
-    stack: [
-      {
-        id: 0,
-        title: "Emotion",
-        image: "EmotionImg",
-        bgColor: "",
-      },
-    ],
-  },
-  {
     title: "Backend Framworks",
     stack: [
       {
         id: 0,
         title: "Express js",
-        image: "ExpressImg",
+        image: ExpressImg,
         bgColor: "",
       },
       {
         id: 1,
         title: "Golang",
-        image: "GolangImg",
+        image: GolangImg,
         bgColor: "",
       },
       {
         id: 2,
         title: "Hasura[backend service]",
-        image: "HasuraImg",
+        image: HasuraImg,
         bgColor: "",
       },
       {
         id: 3,
         title: "GraphQL",
-        image: "GraphQLImg",
+        image: GraphQLImg,
         bgColor: "",
       },
     ],
@@ -123,13 +96,13 @@ export const stackData = [
       {
         id: 0,
         title: "MongoDB",
-        image: "MongdbImg",
+        image: MongoImg,
         bgColor: "",
       },
       {
         id: 1,
         title: "PostgresSQL",
-        image: "PostImg",
+        image: PostImg,
         bgColor: "",
       },
     ],
@@ -140,7 +113,7 @@ export const stackData = [
       {
         id: 0,
         title: "Docker",
-        image: "DockerImg",
+        image: DockerImg,
         bgColor: "",
       },
     ],

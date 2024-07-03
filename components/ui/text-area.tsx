@@ -3,10 +3,10 @@ import { FC, ReactNode } from "react";
 interface TextAreaProps {
   icon?: ReactNode;
   placeholder?: string;
-  className?: string;
+  name?: string;
 }
 
-const TextArea: FC<TextAreaProps> = ({ icon, placeholder, className,  }) => {
+const TextArea: FC<TextAreaProps> = ({ icon, placeholder, name,  }) => {
   return (
     <div className="relative w-full py-3" >
       {/* Icons */}
@@ -15,8 +15,9 @@ const TextArea: FC<TextAreaProps> = ({ icon, placeholder, className,  }) => {
         {icon}
       </div>
       <textarea
+        name={name}
         placeholder={placeholder}
-        className="bg-primary-background text-primary-foreground rounded-lg text-sm ps-10 p-2.5 pt-9 focus:outline-none"
+        className="bg-primary-background w-full text-primary-foreground rounded-lg text-sm ps-10 p-2.5 pt-9 focus:outline-none"
       />
     </div>
   );

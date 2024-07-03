@@ -1,8 +1,11 @@
 "use client";
+import Header from "@/components/navigation/header/header";
 import WaterWaveWrapper from "@/components/visualEffect/water-wave";
 import AboutSection from "@/sections/about";
+import ContactSection from "@/sections/contact";
 
 import FeaturedSection from "@/sections/featured";
+import LandingSection from "@/sections/landing";
 
 export default function Home() {
   return (
@@ -15,8 +18,9 @@ export default function Home() {
       >
         {() => (
           <div>
-            {/* <LandingSection /> */}
+            <LandingSection />
             <AboutSection />
+            <ContactSection />
 
           </div>
         )}
