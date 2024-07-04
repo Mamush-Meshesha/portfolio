@@ -1,28 +1,42 @@
+import Button from "@/components/ui/button";
+import Link from "next/link";
+
 export default function FullscreenMenu() {
   return (
-    <div className="h-screen bg-black fixed  top-0 right-0 text-primary-foreground z-40 font-oswald "></div>
+    <div className="h-[5rem] !flex justify-center items-center bg-black  fixed  top-0 right-0 left-0 text-primary-foreground z-40 font-oswald  ">
+      {navItems.map((nav, i) => (
+        <div
+          key={i}
+          className="!flex !flex-row  items-center justify-center h-full"
+        >
+          <Button className="flex text-xl">
+            <Link href={nav.href}>{nav.title}</Link>
+          </Button>
+        </div>
+      ))}
+    </div>
   );
 }
 
 const navItems = [
   {
     title: "Home",
-    href: "/",
+    href: "#",
   },
   {
     title: "Featured",
-    href: "/#featured",
+    href: "#featured",
   },
   {
     title: "About",
-    href: "/#about",
+    href: "#about",
   },
   {
     title: "Projects",
-    href: "/#projects",
+    href: "#projects",
   },
   {
     title: "Contact",
-    href: "/#contact",
+    href: "#contact",
   },
 ];

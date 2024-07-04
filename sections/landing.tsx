@@ -22,23 +22,23 @@ function LandingSection() {
         <LiveClock timeZone="Africa/Addis Ababa" />
       </div>
       {/* slogan */}
-      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 leading-[14vw] lg:leading-[1-vw] 2xl:leading-[9rem] font-medium h-[40rem] tracking-[-0.3rem]  ">
-        <div className="flex flex-col justify-center items-center text-primary-foreground text-[18vw] lg:text-[14vw] 2xl:text-[12rem] uppercase ">
+      <div id='#' className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 leading-[14vw] lg:leading-[1-vw] 2xl:leading-[6rem] font-medium h-[40rem] tracking-[-0.3rem]  ">
+        <div className="flex flex-col justify-center items-center text-primary-foreground text-[8vw] lg:text-[6vw] 2xl:text-[5rem] uppercase ">
           <div>
-            <span>code</span>
+            <span>I am</span>
           </div>
           <div>
-            <span>crafting</span>
+            <span>Mamush Meshesha</span>
           </div>
           <div className="relative">
-            <span>brillience</span>
+            <span>Full Stack Website Developer</span>
             <div className="text-[1rem] leading-[1.4rem] tracking-[-0.07rem] absolute top-[14vw] lg:top-[10vw] 2xl:top-[9rem] left-0 2xl:left-[57rem] w-[30rem] uppercase font-normal  ">
-              <span>empowering innovation</span>
+              <span></span>
               <br />
-              <span>througn inspired design</span>
+              <span></span>
               <br />
-              <span>where challlenges spark creativity</span>
-              <span>and solution redefine possibilities</span>
+              <span>If you want to change,</span>
+              <span> be the change</span>
             </div>
           </div>
         </div>
